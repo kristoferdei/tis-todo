@@ -100,10 +100,11 @@ const ToDo:FunctionComponent = () => {
                     ))}
                     </thead>
                 </table>
+            </div>
             <div className="flex justify-center absolute inset-x-0 bottom-0">
             <button onClick={() => setVisible(!visible)}
                     className="bg-yellow-500 hover:bg-yellow-600 text-white text-3xl
-                               rounded-full h-16 w-16">
+                               rounded-full h-16 w-16 mb-12">
                 <FontAwesomeIcon icon={faPlus}/>
             </button>
             </div>
@@ -113,7 +114,7 @@ const ToDo:FunctionComponent = () => {
                         <input
                             className="font-sans text-gray-700 text-base font-bold mb-2 p-1
                                         flex justify-center text-center border-solid border-2
-                                        border-black border-opacity-25 rounded-lg bg-gray-100 tracking-wider hover:bg-white"
+                                        border-black border-opacity-25 rounded-lg bg-gray-100 tracking-wider hover:bg-white mb-16"
                             placeholder="Add new todo"
                             value={newTodo}
                             onChange={updateNewTodo()}
@@ -123,7 +124,7 @@ const ToDo:FunctionComponent = () => {
                 </div>
             </form>
             }
-        </div>
+
         </div>
     </div>
     );
